@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "SF Pro";
+  src: url("/src/assets/fonts/SF-Pro-Regular.woff2") format("woff2"),
+    url("/src/assets/fonts/SF-Pro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro";
+  src: url("/src/assets/fonts/SF-Pro-Bold.woff2") format("woff2"),
+    url("/src/assets/fonts/SF-Pro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro";
+  src: url("/src/assets/fonts/SF-Pro-Bold.woff2") format("woff2"),
+    url("/src/assets/fonts/SF-Pro-Bold.woff") format("woff");
+  font-weight: medium;
+  font-style: medium;
+}
+
+.sf-font {
+  font-family: "SF Pro", sans-serif;
+}
+
+.sf-medium {
+  font-family: "SF Pro", sans-serif;
+}
