@@ -5,6 +5,7 @@ import Footer from "./Components/Layout/Footer";
 import Home from "./Pages/Home/page";
 import HeaderElem from "./Components/Layout/HeaderElem";
 import HeaderBottom from "./Components/Layout/HeaderBottom";
+import FooterElem from "./Components/Layout/FooterElem";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
       </Routes>
       <Footer />
+      <FooterElem/>
     </>
   );
 }
