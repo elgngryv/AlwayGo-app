@@ -6,6 +6,9 @@ import Home from "./Pages/Home/page";
 import HeaderElem from "./Components/Layout/HeaderElem";
 import HeaderBottom from "./Components/Layout/HeaderBottom";
 import FooterElem from "./Components/Layout/FooterElem";
+import SignUpPage from "./Pages/SignUpPage/page";
+import SignInPage from "./Pages/SignInPage/page";
+import ForgotPasswordPage from "./Pages/ForgotPasswordPage/page";
 
 function App() {
   return (
@@ -15,6 +18,9 @@ function App() {
       <HeaderBottom/>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/SignUpPage" element={<SignUpPage />} />
+        <Route path="/SignInPage" element={<SignInPage />} />
+        <Route path="/ForgotPasswordPage" element={<ForgotPasswordPage />} />
       </Routes>
       <Footer />
       <FooterElem/>

@@ -5,6 +5,7 @@ import { FaRegUser } from "react-icons/fa6";
 import { FaRegHeart } from "react-icons/fa";
 import { MdOutlineShoppingBag } from "react-icons/md";
 import Catalog from "../../../assets/Catalog.svg";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -12,12 +13,12 @@ const Header = () => {
       {/* Header üst kısmı */}
       <div className="flex justify-between items-center py-4">
         {/* Logo ve başlık */}
-        <div className="flex items-center gap-2">
+        <Link to="/" className="flex items-center gap-2">
           <img src={Logo} alt="Logo" className="h-12" />
           <h2 className="font-bold text-[46px] leading-[56px] text-[#314863]">
             AlWayGo
           </h2>
-        </div>
+        </Link>
 
         {/* Arama formu ve ikonlar */}
         <div className="flex items-center gap-6">
@@ -39,7 +40,9 @@ const Header = () => {
 
           {/* Kullanıcı ve alışveriş ikonları */}
           <div className="flex items-center gap-6">
-            <FaRegUser className="w-[20px] h-[20px] text-gray-700" />
+       <Link to="/SignUpPage">
+       <FaRegUser className="w-[20px] h-[20px] text-gray-700" />
+       </Link>
             <div className="flex items-center gap-2">
               <FaRegHeart className="w-[20px] h-[20px] text-gray-700" />
               <p className="font-normal text-base leading-[24px]">0</p>
