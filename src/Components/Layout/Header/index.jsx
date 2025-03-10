@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="container max-w-[1360px] mx-auto sf-font">
+    <div className="container max-w-[1360px] px-10 mx-auto sf-font">
       {/* Header üst kısmı */}
       <div className="flex justify-between items-center py-4">
         {/* Logo ve başlık */}

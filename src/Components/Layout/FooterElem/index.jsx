@@ -6,7 +6,7 @@ import Vector from "../../../assets/Vector 4.svg"
 
 const FooterElem = () => {
   return (
-    <div className="container max-w-[1360px] border-t p-10 border-[#1D1D1D] mx-auto sf-font">
+    <div className="container max-w-[1360px] px-10 pb-10 mx-auto sf-font">
       <div className="flex justify-between">
         <div className="flex items-center gap-[50px]">
           <div className="flex items-center gap-2">

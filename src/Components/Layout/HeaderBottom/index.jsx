@@ -3,7 +3,7 @@ import Catalog from "../../../assets/Catalog.svg";
 
 const HeaderBottom = () => {
   return (
-    <div className="container max-w-[1360px] mx-auto sf-font border-b border-[#B3B3B3] p-[12px] mt-[24px]">
+    <div className="container max-w-[1360px] px-10 mx-auto sf-font border-b border-[#B3B3B3] p-[12px] mt-[24px]">
       <div className="">
         {/* Category Links */}
         <div className="flex justify-between">

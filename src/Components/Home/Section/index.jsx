@@ -3,7 +3,7 @@ import Arrow from "../../../assets/Arrow-Right.svg";
 
 const Section = () => {
   return (
-    <div className="container max-w-[1360px] mx-auto sf-font mt-10">
+    <div className="container max-w-[1448px] px-10 mx-auto mt-10">
       <div className="w-full h-[520px] bg-[#70808F] flex items-center justify-between px-16 rounded-lg relative overflow-hidden">
         {/* Left content */}
         <div className="flex flex-col z-10">
