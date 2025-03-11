@@ -9,21 +9,25 @@ import FooterElem from "./Components/Layout/FooterElem";
 import SignUpPage from "./Pages/SignUpPage/page";
 import SignInPage from "./Pages/SignInPage/page";
 import ForgotPasswordPage from "./Pages/ForgotPasswordPage/page";
+import VerifyEmailPage from "./Pages/VerifyEmailPage/page";
+import CreateNewPasswordPage from "./Pages/CreateNewPasswordPage/page";
 
 function App() {
   return (
     <>
       <HeaderElem />
       <Header />
-      <HeaderBottom/>
+      <HeaderBottom />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/SignUpPage" element={<SignUpPage />} />
         <Route path="/SignInPage" element={<SignInPage />} />
         <Route path="/ForgotPasswordPage" element={<ForgotPasswordPage />} />
+        <Route path="/VerifyEmailPage" element={<VerifyEmailPage />} />
+        <Route path="/CreateNewPasswordPage" element={<CreateNewPasswordPage />} />
       </Routes>
       <Footer />
-      <FooterElem/>
+      <FooterElem />
     </>
   );
 }
