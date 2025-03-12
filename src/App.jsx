@@ -11,6 +11,7 @@ import SignInPage from "./Pages/SignInPage/page";
 import ForgotPasswordPage from "./Pages/ForgotPasswordPage/page";
 import VerifyEmailPage from "./Pages/VerifyEmailPage/page";
 import CreateNewPasswordPage from "./Pages/CreateNewPasswordPage/page";
+import ProductDetail from "./Pages/ProductDetail/page";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/ForgotPasswordPage" element={<ForgotPasswordPage />} />
         <Route path="/VerifyEmailPage" element={<VerifyEmailPage />} />
         <Route path="/CreateNewPasswordPage" element={<CreateNewPasswordPage />} />
+        <Route path="/ProductDetailPage" element={<ProductDetail />} />
       </Routes>
       <Footer />
       <FooterElem />
