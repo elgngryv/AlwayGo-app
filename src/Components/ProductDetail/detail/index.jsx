@@ -6,7 +6,7 @@ import product from "../../../assets/products/p6.png";
 const Details = () => {
   return (
     <section className="py-8 bg-white md:pt-[40px] md:pb-[92px] antialiased">
-      <div className="max-w-screen-xl px-4 mx-auto 2xl:px-0">
+      <div className="container max-w-[1360px] mx-auto">
         <div className="lg:grid lg:grid-cols-2 lg:gap-8 xl:gap-16">
           {/* Image */}
           <div className="shrink-0 max-w-md lg:max-w-lg mx-auto">

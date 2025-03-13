@@ -5,7 +5,7 @@ import deliveryTruck from "../../assets/delivery-truck.png";
 const FreeDeliveryBox = () => {
   return (
     <div className="rounded-lg bg-[#32A960] h-[520px] sf-font mt-24 px-[60px] pt-[60px] pb-16 relative">
-      <div className="text-black text-black font-semibold">Promotions!</div>
+      <div className="text-black  font-semibold">Promotions!</div>
       <div className="flex items-center">
         <div className="text-white text-[58px] leading-[64px] font-semibold absolute inset-y-0 flex items-center">Free delivery <br /> to Starex branches</div>
         <div className="mr-16 ml-auto">
