@@ -1,6 +1,6 @@
 import React from "react";
-import arrowRight from "../../assets/arrow-right-b.svg";
-import deliveryTruck from "../../assets/delivery-truck.png";
+import arrowRight from "@/assets/arrow-right-b.svg";
+import deliveryTruck from "@/assets/delivery-truck.png";
 
 const FreeDeliveryBox = () => {
   return (
