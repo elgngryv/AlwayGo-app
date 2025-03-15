@@ -1,12 +1,10 @@
 import React from "react";
-import Details from "../../Components/ProductDetail/detail";
-import ProductDetailElem from "../../Components/ProductDetailElem";
+import ProductDetails from "../../components/product-details";
 
 const ProductDetail = () => {
   return (
     <div>
-      <Details />
-      <ProductDetailElem/>
+      <ProductDetails />
     </div>
   );
 };

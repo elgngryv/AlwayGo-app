@@ -1,5 +1,5 @@
 import React from "react";
-import CreateNewPassword from "../../Components/CreateNewPassword";
+import CreateNewPassword from "../../components/auth/create-new-password";
 
 const CreateNewPasswordPage = () => {
   return (

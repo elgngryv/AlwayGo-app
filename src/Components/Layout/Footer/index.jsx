@@ -8,7 +8,7 @@ import Telegram from "../../../assets/Telegram4.svg";
 
 const Footer = () => {
   return (
-    <div className="container max-w-[1360px] px-10 mx-auto mt-[43px] p-10 sf-font ">
+    <div className="container max-w-[1433px] px-10 mx-auto mt-[43px] p-10 sf-font ">
       <div className="h-px bg-black mb-10"></div>
       <div className="flex justify-between">
         <div>

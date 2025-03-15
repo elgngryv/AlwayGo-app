@@ -1,5 +1,5 @@
 import React from "react";
-import VerifyEmail from "../../Components/VerifyEmail";
+import VerifyEmail from "../../components/auth/verify-email";
 
 const VerifyEmailPage = () => {
   return (
