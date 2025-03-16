@@ -1,5 +1,5 @@
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import Header from "./components/layout/header";
 import Footer from "./components/layout/footer";
 import Home from "./Pages/Home/page";
@@ -12,6 +12,7 @@ import ForgotPasswordPage from "./Pages/ForgotPasswordPage/page";
 import VerifyEmailPage from "./Pages/VerifyEmailPage/page";
 import CreateNewPasswordPage from "./Pages/CreateNewPasswordPage/page";
 import ProductDetail from "./Pages/ProductDetail/page";
+import ProductFilters from "./components/product-filters";
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
         <Route path="/VerifyEmailPage" element={<VerifyEmailPage />} />
         <Route path="/CreateNewPasswordPage" element={<CreateNewPasswordPage />} />
         <Route path="/product-details/:id" element={<ProductDetail />} />
+        <Route path="/product-filters" element={<ProductFilters />} />
+        <Route path="*" element={<Navigate to='/'/>} />
       </Routes>
       <Footer />
       <FooterElem />
