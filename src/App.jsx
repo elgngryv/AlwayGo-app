@@ -13,6 +13,15 @@ import VerifyEmailPage from "./Pages/VerifyEmailPage/page";
 import CreateNewPasswordPage from "./Pages/CreateNewPasswordPage/page";
 import ProductDetail from "./Pages/ProductDetail/page";
 import ProductFilters from "./components/product-filters";
+import AccountPage from "./Pages/Account/page";
+import PersonalData from "./Pages/Account/personal-data/page";
+import MyCards from "./Pages/Account/myCards/page";
+import Wishlist from "./Pages/Account/wishlist/page";
+import WaitingList from "./Pages/Account/waitingList/page";
+import MyOffers from "./Pages/Account/myOffers/page";
+import ViewedProducts from "./Pages/Account/viewedProd/page";
+import MyCoupons from "./Pages/Account/myCoupons/page";
+import SellerMessages from "./Pages/Account/sellerMessages/page";
 
 function App() {
   return (
@@ -29,7 +38,18 @@ function App() {
         <Route path="/CreateNewPasswordPage" element={<CreateNewPasswordPage />} />
         <Route path="/product-details/:id" element={<ProductDetail />} />
         <Route path="/product-filters" element={<ProductFilters />} />
-        <Route path="*" element={<Navigate to='/'/>} />
+
+        <Route path="/account" element={<AccountPage />}>
+          <Route path="personal-data" element={<PersonalData />} />
+          <Route path="my-cards" element={<MyCards />} />
+          <Route path="wishlist" element={<Wishlist />} />
+          <Route path="waiting-list" element={<WaitingList />} />
+          <Route path="my-offers" element={<MyOffers />} />
+          <Route path="viewed-products" element={<ViewedProducts />} />
+          <Route path="my-coupons" element={<MyCoupons />} />
+          <Route path="seller-messages" element={<SellerMessages />} />
+        </Route>
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <Footer />
       <FooterElem />
