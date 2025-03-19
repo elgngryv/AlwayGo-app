@@ -16,7 +16,7 @@ const menuItems = [
   { icon: star, text: "Wishlists", path: "/account/wishlist" },
   { icon: heart, text: "Waiting list", path: "/account/waiting-list" },
   { icon: offer, text: "My offers", path: "/account/my-offers" },
-  { icon: review, text: "Viewed products", path: "/account/viewed-products" },
+  { icon: review, text: "Reviews", path: "/account/viewed-products" },
   { icon: eye, text: "My Coupons", path: "/account/my-coupons" },
   { icon: coupon, text: "Seller Messages", path: "/account/seller-messages" },
   { icon: exit, text: "Exit", path: "/logout" },

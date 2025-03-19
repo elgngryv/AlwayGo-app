@@ -20,6 +20,9 @@
   font-weight: medium;
   font-style: medium;
 }
+body{
+  font-family: "SF Pro", sans-serif;
+}
 
 .sf-font {
   font-family: "SF Pro", sans-serif;
