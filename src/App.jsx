@@ -22,6 +22,7 @@ import MyOffers from "./Pages/Account/myOffers/page";
 import ViewedProducts from "./Pages/Account/viewedProd/page";
 import MyCoupons from "./Pages/Account/myCoupons/page";
 import SellerMessages from "./Pages/Account/sellerMessages/page";
+import Cart from "./Components/cart";
 
 function App() {
   return (
@@ -38,6 +39,8 @@ function App() {
         <Route path="/CreateNewPasswordPage" element={<CreateNewPasswordPage />} />
         <Route path="/product-details/:id" element={<ProductDetail />} />
         <Route path="/product-filters" element={<ProductFilters />} />
+        <Route path="/cart" element={<Cart />} />
+
 
         <Route path="/account" element={<AccountPage />}>
           <Route path="personal-data" element={<PersonalData />} />
