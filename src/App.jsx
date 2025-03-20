@@ -12,7 +12,6 @@ import ForgotPasswordPage from "./Pages/ForgotPasswordPage/page";
 import VerifyEmailPage from "./Pages/VerifyEmailPage/page";
 import CreateNewPasswordPage from "./Pages/CreateNewPasswordPage/page";
 import ProductDetail from "./Pages/ProductDetail/page";
-import ProductFilters from "./components/product-filters";
 import AccountPage from "./Pages/Account/page";
 import PersonalData from "./Pages/Account/personal-data/page";
 import MyCards from "./Pages/Account/myCards/page";
@@ -22,7 +21,8 @@ import MyOffers from "./Pages/Account/myOffers/page";
 import ViewedProducts from "./Pages/Account/viewedProd/page";
 import MyCoupons from "./Pages/Account/myCoupons/page";
 import SellerMessages from "./Pages/Account/sellerMessages/page";
-import Cart from "./Components/cart";
+import CartPage from "./Pages/Cart/Page";
+import ProductFiltersPage from "./Pages/ProductFilters/page";
 
 function App() {
   return (
@@ -38,9 +38,8 @@ function App() {
         <Route path="/VerifyEmailPage" element={<VerifyEmailPage />} />
         <Route path="/CreateNewPasswordPage" element={<CreateNewPasswordPage />} />
         <Route path="/product-details/:id" element={<ProductDetail />} />
-        <Route path="/product-filters" element={<ProductFilters />} />
-        <Route path="/cart" element={<Cart />} />
-
+        <Route path="/product-filters" element={<ProductFiltersPage />} />
+        <Route path="/cart" element={<CartPage />} />
 
         <Route path="/account" element={<AccountPage />}>
           <Route path="personal-data" element={<PersonalData />} />

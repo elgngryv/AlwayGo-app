@@ -34,29 +34,29 @@ const Header = () => {
               type="submit"
               className="p-1 rounded-full hover:bg-gray-100 transition-colors"
               aria-label="Search">
-              <FiSearch className="h-5 w-5 text-gray-700" />
+              <FiSearch className="size-5 text-gray-700" />
             </button>
           </form>
 
           {/* Kullanıcı ve alışveriş ikonları */}
           <div className="flex items-center gap-6">
-       <Link to="/SignUpPage">
-       <FaRegUser className="w-[20px] h-[20px] text-gray-700" />
-       </Link>
+            <Link to="/SignUpPage">
+              <FaRegUser className="size-5 text-gray-700" />
+            </Link>
             <div className="flex items-center gap-2">
-              <FaRegHeart className="w-[20px] h-[20px] text-gray-700" />
-              <p className="font-normal text-base leading-[24px]">0</p>
+              <FaRegHeart className="size-5 text-gray-700" />
+              <p className="font-normal text-base leading-6">0</p>
             </div>
-            <div className="flex items-center gap-2">
-              <MdOutlineShoppingBag className="w-[20px] h-[20px] text-gray-700" />
-              <p className="font-normal text-base leading-[24px]">1</p>
-            </div>
+            <Link to='/cart' className="flex items-center gap-2">
+              <MdOutlineShoppingBag className="size-5 text-gray-700" />
+              <p className="font-normal text-base leading-6">1</p>
+            </Link>
           </div>
         </div>
       </div>
 
       {/* Header alt kısmı */}
-     
+
     </div>
   );
 };
