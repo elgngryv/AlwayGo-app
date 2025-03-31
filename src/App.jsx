@@ -22,6 +22,7 @@ import MyOffers from "./Pages/Account/myOffers/page";
 import ViewedProducts from "./Pages/Account/viewedProd/page";
 import MyCoupons from "./Pages/Account/myCoupons/page";
 import SellerMessages from "./Pages/Account/sellerMessages/page";
+import ComparePage from "./Components/Compare";
 
 function App() {
   return (
@@ -38,7 +39,7 @@ function App() {
         <Route path="/CreateNewPasswordPage" element={<CreateNewPasswordPage />} />
         <Route path="/product-details/:id" element={<ProductDetail />} />
         <Route path="/product-filters" element={<ProductFilters />} />
-
+        <Route path="/ComparePage" element={<ComparePage/>} />
         <Route path="/account" element={<AccountPage />}>
           <Route path="personal-data" element={<PersonalData />} />
           <Route path="my-cards" element={<MyCards />} />
@@ -50,6 +51,7 @@ function App() {
           <Route path="seller-messages" element={<SellerMessages />} />
         </Route>
         <Route path="*" element={<Navigate to="/" />} />
+
       </Routes>
       <Footer />
       <FooterElem />
