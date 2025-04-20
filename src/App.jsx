@@ -23,6 +23,8 @@ import ViewedProducts from "./Pages/Account/viewedProd/page";
 import MyCoupons from "./Pages/Account/myCoupons/page";
 import SellerMessages from "./Pages/Account/sellerMessages/page";
 import ComparePage from "./Components/Compare";
+import CartPage from "./Pages/CartPage/page";
+import FavoritePage from "./Pages/FavoritPage/page";
 
 function App() {
   return (
@@ -36,10 +38,15 @@ function App() {
         <Route path="/SignInPage" element={<SignInPage />} />
         <Route path="/ForgotPasswordPage" element={<ForgotPasswordPage />} />
         <Route path="/VerifyEmailPage" element={<VerifyEmailPage />} />
-        <Route path="/CreateNewPasswordPage" element={<CreateNewPasswordPage />} />
+        <Route
+          path="/CreateNewPasswordPage"
+          element={<CreateNewPasswordPage />}
+        />
         <Route path="/product-details/:id" element={<ProductDetail />} />
         <Route path="/product-filters" element={<ProductFilters />} />
-        <Route path="/ComparePage" element={<ComparePage/>} />
+        <Route path="/ComparePage" element={<ComparePage />} />
+        <Route path="/CartPage" element={<CartPage />} />
+        <Route path="/FavoritePage" element={<FavoritePage />} />
         <Route path="/account" element={<AccountPage />}>
           <Route path="personal-data" element={<PersonalData />} />
           <Route path="my-cards" element={<MyCards />} />
@@ -51,7 +58,6 @@ function App() {
           <Route path="seller-messages" element={<SellerMessages />} />
         </Route>
         <Route path="*" element={<Navigate to="/" />} />
-
       </Routes>
       <Footer />
       <FooterElem />
